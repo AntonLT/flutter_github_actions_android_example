@@ -38,3 +38,7 @@ jobs:
      # Get Flutter project dependencies
      - name: Get dependencies
        run: flutter pub get
+     # Build Android App Bundle which by default will be stored in the
+     # ./build/app/outputs/bundle/release as app-release.aab
+     - name: Build release app bundle
+       run: flutter build appbundle
